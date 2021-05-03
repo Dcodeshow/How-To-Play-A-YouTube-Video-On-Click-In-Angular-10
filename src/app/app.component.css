@@ -1,0 +1,39 @@
+.image-video-wrp figure {
+    position: relative;
+    margin: 0;
+}
+
+.image-video-wrp figure .thumblin {
+    height: 265px;
+    object-fit: cover;
+    width: 100%;
+    border: 2px solid #000;
+}
+
+.image-video-wrp figure iframe {
+    height: 265px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.play-icon-box {
+    position: absolute;
+    right: 25px;
+    bottom: -20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.play-icon-box img {
+    position: relative;
+    left: 2px;
+}

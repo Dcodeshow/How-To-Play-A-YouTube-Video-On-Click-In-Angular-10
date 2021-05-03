@@ -1,0 +1,29 @@
+<div class="image-video-wrp">
+    <figure>
+        <ng-container *ngIf="videodisabled; else videoblock">
+            <img src="./assets/images/video-poster.jpg" class="img-fluid thumblin">
+        </ng-container>
+        <ng-template #videoblock>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QYU8zydUqD8?autoplay=1&mute=1&controls=0" allowfullscreen></iframe>
+        </ng-template>
+        <div class="play-icon-box ">
+            <img (click)="changeImg()" [title]="play" [src]="videoIcon" alt="">
+        </div>
+    </figure>
+</div>
+<!--image-video-wrp-->
+
+<!--Today i will show you on click how to play video and hide 
+  thumblin; first will create click event and call icon via 
+property binding;will create onclick function;
+now will change img to video, look at the dome it add and remove img tag
+and video tag bcz of ng-template-->
+
+<!--Conclusion, we have use: 
+ng-container,
+ng-template,
+#videoblock template ref variable,
+click event,
+property binding,
+if condition,
+string interpolation.-->
